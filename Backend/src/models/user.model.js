@@ -14,7 +14,8 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: [ true, "Password is required" ],
-        select: false
+        select: false // by default this field wont be read. We write this so that in response password cant be seen 
+        //but it will create problem while log-in. Therefore we write select+password in login function
     }
 })
 
