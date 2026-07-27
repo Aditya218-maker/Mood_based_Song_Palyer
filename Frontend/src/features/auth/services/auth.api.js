@@ -1,4 +1,6 @@
 import axios from "axios"
+//these functions will help Frontend to interact with those 4 APIs created in Backend(routes.js)
+
 
 const api = axios.create({
     baseURL: "http://localhost:3000",
