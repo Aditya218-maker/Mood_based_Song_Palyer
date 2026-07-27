@@ -16,7 +16,7 @@ const Register = () => {
     const { loading, handleRegister } = useAuth()
 
     async function handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault() 
 
         await handleRegister({ username, password, email })
 
